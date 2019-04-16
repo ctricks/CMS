@@ -6,13 +6,14 @@ using CondoBillingSystem.Classes;
 using MySql.Data.MySqlClient;
 using System.Management;
 using clsLic;
+using System.Data;
 
 namespace CondoBillingSystem.Classes
 {
     public class clsFunction
     {
         clsDatabase cd = new clsDatabase();
-        string CryptoKeys = "CONDOSYSTEM";
+        string CryptoKeys = "cbms-3bok-siri19";
         public bool CheckDatabaseInfo(clsIni ci, ref string ConnectionString, ref MySqlConnection myconn)
         {
             bool result = false;
@@ -40,6 +41,18 @@ namespace CondoBillingSystem.Classes
             {
             }
             return result;
+        }
+        public DataTable GetUserRole()
+        {
+            DataTable dtResult = new DataTable();
+            try
+            {
+                string Query = "Select RoleName,sysID from tbluserrole where isEnabled = 1 order by RoleName asc";
+                dtResult = cd.ExecuteQuery(Query);
+            }catch
+            {
+            }
+            return dtResult;
         }
         public bool CheckLicense(string LicenseCode)
         {

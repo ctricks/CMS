@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.tbMachineID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.tbMachineID = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbSerialNo = new System.Windows.Forms.TextBox();
             this.btnRegister = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -58,15 +58,50 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Message";
             // 
-            // groupBox2
+            // label4
             // 
-            this.groupBox2.Controls.Add(this.tbSerialNo);
-            this.groupBox2.Location = new System.Drawing.Point(11, 129);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(511, 50);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Enter your license here";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(145, 87);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Machine ID:";
+            // 
+            // tbMachineID
+            // 
+            this.tbMachineID.Location = new System.Drawing.Point(216, 83);
+            this.tbMachineID.Name = "tbMachineID";
+            this.tbMachineID.ReadOnly = true;
+            this.tbMachineID.Size = new System.Drawing.Size(279, 20);
+            this.tbMachineID.TabIndex = 4;
+            // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(142, 46);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(353, 33);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Please send your Machine ID and enter your license key on the field for registeri" +
+                "ng this machine.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(142, 33);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(353, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Your system was not register properly. Kindly contact your system provider";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(141, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(277, 23);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "UNREGISTERED APPLICATION";
             // 
             // pictureBox1
             // 
@@ -79,50 +114,15 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label1
+            // groupBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(141, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(277, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "UNREGISTERED APPLICATION";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(142, 33);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(353, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Your system was not register properly. Kindly contact your system provider";
-            // 
-            // label3
-            // 
-            this.label3.Location = new System.Drawing.Point(142, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(353, 33);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Please send your Machine ID and enter your license key on the field for registeri" +
-                "ng this machine.";
-            // 
-            // tbMachineID
-            // 
-            this.tbMachineID.Location = new System.Drawing.Point(216, 83);
-            this.tbMachineID.Name = "tbMachineID";
-            this.tbMachineID.ReadOnly = true;
-            this.tbMachineID.Size = new System.Drawing.Size(279, 20);
-            this.tbMachineID.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(145, 87);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Machine ID:";
+            this.groupBox2.Controls.Add(this.tbSerialNo);
+            this.groupBox2.Location = new System.Drawing.Point(11, 129);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(511, 50);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Enter your license here";
             // 
             // tbSerialNo
             // 
@@ -139,6 +139,7 @@
             this.btnRegister.TabIndex = 2;
             this.btnRegister.Text = "REGISTER";
             this.btnRegister.UseVisualStyleBackColor = true;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // Unregistered
             // 
@@ -157,9 +158,9 @@
             this.Load += new System.EventHandler(this.Unregistered_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

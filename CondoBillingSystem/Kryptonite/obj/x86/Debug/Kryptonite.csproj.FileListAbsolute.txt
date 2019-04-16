@@ -1,0 +1,8 @@
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\obj\x86\Debug\Kryptonite.Form1.resources
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\obj\x86\Debug\Kryptonite.Properties.Resources.resources
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\obj\x86\Debug\Kryptonite.csproj.GenerateResource.Cache
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\bin\Debug\Kryptonite.exe
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\bin\Debug\Kryptonite.pdb
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\bin\Debug\clsLic.dll
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\obj\x86\Debug\Kryptonite.exe
+D:\MyGIT\CMS\CondoBillingSystem\Kryptonite\obj\x86\Debug\Kryptonite.pdb

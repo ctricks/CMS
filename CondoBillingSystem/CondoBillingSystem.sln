@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CondoBillingSystem", "CondoBillingSystem\CondoBillingSystem.csproj", "{EF8B8197-021D-4C76-95DA-3FEB3F5A900F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kryptonite", "Kryptonite\Kryptonite.csproj", "{18C8E968-2B29-4C89-BBD9-6E9705A8EE0E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,10 @@ Global
 		{EF8B8197-021D-4C76-95DA-3FEB3F5A900F}.Debug|x86.Build.0 = Debug|x86
 		{EF8B8197-021D-4C76-95DA-3FEB3F5A900F}.Release|x86.ActiveCfg = Release|x86
 		{EF8B8197-021D-4C76-95DA-3FEB3F5A900F}.Release|x86.Build.0 = Release|x86
+		{18C8E968-2B29-4C89-BBD9-6E9705A8EE0E}.Debug|x86.ActiveCfg = Debug|x86
+		{18C8E968-2B29-4C89-BBD9-6E9705A8EE0E}.Debug|x86.Build.0 = Debug|x86
+		{18C8E968-2B29-4C89-BBD9-6E9705A8EE0E}.Release|x86.ActiveCfg = Release|x86
+		{18C8E968-2B29-4C89-BBD9-6E9705A8EE0E}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

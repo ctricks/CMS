@@ -99,6 +99,15 @@ namespace CondoBillingSystem
             }
             return PicStr;
         }
+        private void LoginControls(bool status)
+        {
+            tbUsername.Enabled = status;
+            tbPassword.Enabled = status;
+            cbRemember.Enabled = status;
+            cbRole.Enabled = status;
+            btnLogin.Enabled = status;
+        }
+
         private void LoadLoginImage(int ctr)
         {
             if (PicLogin.Count > 0)
@@ -123,22 +132,32 @@ namespace CondoBillingSystem
                 }
             }
 
-            if(progressBar1.Value == 50)
+            if(progressBar1.Value == 30)
             {
                 lblProcessStatus.Text = "Checking License...";
-                if(!cf.CheckLicense(ci.Read("LicenseCode","Licensing")))
+                if (!cf.CheckLicense(ci.Read("LicenseCode", "Licensing")))
                 {
                     lblProcessStatus.ForeColor = Color.Red;
                     lblProcessStatus.Text = "Error: Please check your license settings.";
                     tmrLoading.Stop();
-                    DialogResult drQuestion = MessageBox.Show("License is Invalid. Would you like update it today?","Update License",MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                    DialogResult drQuestion = MessageBox.Show("License is Invalid. Would you like update it today?", "Update License", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (drQuestion == System.Windows.Forms.DialogResult.Yes)
                     {
                         Unregistered uv = new Unregistered();
                         uv.ShowDialog();
                         if (uv.isMatch)
                         {
-                            this.Close();
+                            if (!string.IsNullOrEmpty(uv.MatchWord))
+                            {
+                                lblProcessStatus.ForeColor = Color.White;
+                                lblProcessStatus.Text = "License Valid...";
+                                ci.Write("LicenseCode", uv.MatchWord, "Licensing");
+                            }
+                            else
+                            {
+                                MessageBox.Show("Application will close. Please check with your vendor \n(unregistered copy)", "Unable to use the Application.", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                Environment.Exit(0);
+                            }
                         }
                         else
                         {
@@ -152,12 +171,22 @@ namespace CondoBillingSystem
                         return;
                     }
                 }
+                else
+                {
+                    lblProcessStatus.Text = "License is Valid...";
+                }
             }
 
             if (progressBar1.Value >= 100)
             {
                 tmrLoading.Stop();
+                lblProcessStatus.Text = "System is ready to use...";
                 progressBar1.Value = 100;
+                cbRole.DataSource = cf.GetUserRole();
+                cbRole.DisplayMember = "RoleName";
+                cbRole.ValueMember = "sysID";
+                LoginControls(true);
+                tbUsername.Focus();
                 return;
             }
             progressBar1.Value += 5;
@@ -170,6 +199,16 @@ namespace CondoBillingSystem
                 }
                 LoadLoginImage(counter);
             }
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(tbUsername.Text) || string.IsNullOrEmpty(tbPassword.Text))
+            {
+                MessageBox.Show("Error: Invalid User. Please login valid User", "Unable to login", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
         }
     }
 }

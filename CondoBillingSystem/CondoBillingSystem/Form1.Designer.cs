@@ -37,6 +37,7 @@
             this.pbImageLoading = new System.Windows.Forms.PictureBox();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblCompanyName = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.cbRole = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tmrLoading = new System.Windows.Forms.Timer(this.components);
-            this.lblCompanyName = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -159,6 +159,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Please login here";
             // 
+            // lblCompanyName
+            // 
+            this.lblCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCompanyName.Location = new System.Drawing.Point(8, 244);
+            this.lblCompanyName.Name = "lblCompanyName";
+            this.lblCompanyName.Size = new System.Drawing.Size(268, 23);
+            this.lblCompanyName.TabIndex = 1;
+            this.lblCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel4
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
@@ -220,6 +229,7 @@
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "&Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // tbPassword
             // 
@@ -265,15 +275,6 @@
             // tmrLoading
             // 
             this.tmrLoading.Tick += new System.EventHandler(this.tmrLoading_Tick);
-            // 
-            // lblCompanyName
-            // 
-            this.lblCompanyName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCompanyName.Location = new System.Drawing.Point(8, 244);
-            this.lblCompanyName.Name = "lblCompanyName";
-            this.lblCompanyName.Size = new System.Drawing.Size(268, 23);
-            this.lblCompanyName.TabIndex = 1;
-            this.lblCompanyName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
