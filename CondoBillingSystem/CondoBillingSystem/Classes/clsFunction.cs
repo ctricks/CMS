@@ -54,6 +54,18 @@ namespace CondoBillingSystem.Classes
             }
             return dtResult;
         }
+        public bool CheckUsers(string Username, string Password, string Role)
+        {
+            bool result = false;
+            try
+            {
+                string Query = "Select ";
+            }
+            catch
+            {
+            }
+            return result;
+        }
         public bool CheckLicense(string LicenseCode)
         {
             bool result = false;

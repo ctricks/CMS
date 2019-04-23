@@ -17,3 +17,5 @@ D:\MyGIT\CMS\CondoBillingSystem\CondoBillingSystem\bin\Debug\MySql.Data.dll
 D:\MyGIT\CMS\CondoBillingSystem\CondoBillingSystem\obj\x86\Debug\CondoBillingSystem.csprojResolveAssemblyReference.cache
 D:\MyGIT\CMS\CondoBillingSystem\CondoBillingSystem\bin\Debug\clsLic.dll
 D:\MyGIT\CMS\CondoBillingSystem\CondoBillingSystem\obj\x86\Debug\CondoBillingSystem.Unregistered.resources
+D:\MyGIT\CMS\CondoBillingSystem\CondoBillingSystem\obj\x86\Debug\CondoBillingSystem.FrmMain.resources
+D:\MyGIT\CMS\CondoBillingSystem\CondoBillingSystem\obj\x86\Debug\CondoBillingSystem.FORMS.FrmLogin.resources
