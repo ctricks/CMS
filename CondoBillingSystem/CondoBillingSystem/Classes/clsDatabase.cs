@@ -14,6 +14,7 @@ namespace CondoBillingSystem.Classes
         string DBPath = Environment.CurrentDirectory + "\\Settings.ini"; 
         MySqlConnection myConnection;
 
+        #region MySQL
         public bool isDBConnected(string ConnectionString, ref MySqlConnection myConn)
         {
             bool result = false;
@@ -110,5 +111,10 @@ namespace CondoBillingSystem.Classes
             }
             return dtResult;
         }
+        #endregion
+
+        #region SQLLite
+
+        #endregion
     }
 }
