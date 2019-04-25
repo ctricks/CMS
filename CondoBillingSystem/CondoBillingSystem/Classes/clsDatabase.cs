@@ -6,6 +6,7 @@ using MySql.Data.MySqlClient;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace CondoBillingSystem.Classes
 {
     public class clsDatabase
@@ -114,7 +115,17 @@ namespace CondoBillingSystem.Classes
         #endregion
 
         #region SQLLite
-
+        public bool isDBConnected(string ConnectionString)
+        {
+            bool result = false;
+            try
+            {
+            }
+            catch
+            {
+            }
+            return result;
+        }
         #endregion
     }
 }

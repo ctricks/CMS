@@ -1,0 +1,6 @@
+SELECT sysID,
+       username,
+       password,
+       roleID,
+       isEnabled
+  FROM tblUsers;
